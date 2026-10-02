@@ -1,0 +1,248 @@
+:root{
+    --color_principal:#fefdfed2;
+    --color_secundario:#00a859;
+    --color_obscuro:#2b2b2b;
+    --color_obscuro2:black;
+    --color_claro:#fff;
+    --color_fondo:#f4f7f6;
+    --color_borde:#e0e0e0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3a0345d2;
+    color: var(--color_borde);
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: var(--fuente_titulos);
+}
+header{
+    display:flex; /*Default flex-direction:row*/
+    background-color: var(--color_obscuro2);
+    justify-content: space-between;
+    align-items:center;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+    /*Poner el menu pegado*/
+    top:0;
+    position: sticky;
+    z-index: 1000;
+    padding: 15px 50px;
+}
+nav{
+    display:flex;
+}
+nav ul{
+    display:flex;
+    gap: 20px;
+    align-items:center;
+}
+
+nav a{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color:inherit;
+}
+nav a:hover{
+    /*Aqui tengo que regresar*/
+    color:var(--color_principal);
+}
+.Autobiografia .autobiografia{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:20px;
+}
+.Autobiografia .autobiografia h1{
+    text-align: center;
+    display:flex;
+}
+
+/**/
+.yop{
+    display:flex;
+    align-items: center;
+    gap:40px;
+    padding:60px 0;
+}
+.yop_autobiografia, .imagen{
+    flex: 1 1 300px;
+}
+.yop_autobiografia h2{
+    font-size: 2.5rem;
+    color:var(--color_principal);
+    line-height: 1.3;
+    text-align:center;
+}
+.yop_autobiografia p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.fotos{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.imagen img{width: 50%;
+width: 400px;
+max-width: 400px;
+border-radius: 15px;
+}
+/* Grind de cursos*/
+#conocerme, #autografia{
+  padding:40px 0;
+}
+#conocerme h2, #autografia h2{
+    text-align: center;
+    color:var(--color_principal);
+    margin-bottom:30px;
+}
+.autografia, .conocerme{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+.Yo{
+    background-color:var(--color_claro);
+    border: 10px solid var(--color_borde);
+    border-radius: 8px;
+    flex: 1 1 280px;
+    max-width: 350px;
+    display:flex;
+    flex-direction:column;
+    /*efecto*/
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.Yo:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08)
+}
+.Yo img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+.gustos{
+    padding:20px;
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    justify-content:flex-start;
+}
+.gustos h3{
+    margin-bottom:5px;
+    line-height: 1.3;
+}
+.gustos p{
+    font-size:1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+.mipersona{
+    background-color: var(--color_fondo);
+    color:var(--color_principal);
+    font-family: var(--fuente_titulo);
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight:700;
+    text-transform:uppercase;
+    align-self: flex-start;
+}
+.generaciones {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 30px;
+}
+.card {
+    background-color: var(--color_obscuro);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.10);
+}
+.card-imagen {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.card-contenido {
+    padding: 30px;
+}
+.card-contenido span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.card h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.cielo{
+    background-image: url("../Images/img11.jpeg");
+}
+.paisaje{
+    background-image: url("../Images/img4.jpeg");
+}
+
+.UTL{
+    background-image: url("../Images/img13.jpeg");
+}
+
+.poemas{
+    background-image: url("../Images/img17.png");
+}
+.caminar{
+    background-image: url("../Images/img2.jpeg");
+}
+.metal{
+    background-image: url("../Images/img18.jpg");
+}
+.industrial{
+    background-image: url("../Images/img19.jpg");
+}
+.black{
+    background-image: url("../Images/img20.jpg");
+}
+.Esperon{
+background-image: url("../Images/img21.jpg");
+}
+.comida{
+    background-image: url("../Images/img22.jpg");
+}
+.cta {
+    text-align: center;
+    padding: 100px 30px;
+    background: #111;
+    color: white;
+}
+.cta h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.cta p {
+    margin-bottom: 30px;
+}
